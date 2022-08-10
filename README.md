@@ -35,6 +35,8 @@ Step 6.
 
 Write a report of the steps you did and what difficulties you faced.
 
+The visualization should look similar to something like this :
+
 
 ![image](https://user-images.githubusercontent.com/84134316/183881562-1bbd2503-1ebd-47a1-a396-97af4acebc46.png)
 
