@@ -8,39 +8,44 @@ We are also asked to visualize the Data and present them in either a matplotlib 
 
 Every calculation and transformation of Data has to happen through a Python Script. 
 
-The following steps are just a recommendation, we suggest you trying and think outside the box while working with this data and maybe take different paths.
+## The following steps are just a recommendation, we suggest you trying and think outside the box while working with this data and maybe take different paths.
 
 
-Step 1.
+- ###### Step 1.
 
-Add the Dataset to Workbench.
+Add the Dataset provided to Workbench.
 
-Step 2.
+- ###### Step 2.
 
-Use a Query to get all the columns between 2016 and 2019
+Use a Query to get all the columns of the table between the years 2016-2019
 
-Step 3.
+- ###### Step 3.
 
-Extract the data to an CSV file
+Export the data to an CSV file like shown below
 
-Step 4.
+![image](https://user-images.githubusercontent.com/84134316/184128259-8ce76a57-d31a-4fdb-86d2-e38d46fc253c.png)
+
+- ###### Step 4.
 
 Use Python and Pandas to Aggregate the CSV data so we can get the most popular item sold based on zip code and percentage of sales per store.
 
-Step 5.
+- ###### Step 5.
 
 Use Matplotlib or Tableau with the newly made CSV file and present your Data.
 
-Step 6.
+- ###### Step 6.
 
 Write a report of the steps you did and what difficulties you faced.
 
-The visualization should look similar to something like this :
+## The visualization should look similar to something like this, but you are free to experiment. :
 
 
-![image](https://user-images.githubusercontent.com/84134316/183881562-1bbd2503-1ebd-47a1-a396-97af4acebc46.png)
+### 1.  If you are using Matplotlib
 
 
-![image](https://user-images.githubusercontent.com/84134316/183916100-85c98b3b-5de7-40dd-bbc1-cefdaacb0619.png)
+<img src="https://user-images.githubusercontent.com/84134316/183881562-1bbd2503-1ebd-47a1-a396-97af4acebc46.png" width="450">
+
+### 2. If you are using Tableau
 
 
+<img src="https://user-images.githubusercontent.com/84134316/183916100-85c98b3b-5de7-40dd-bbc1-cefdaacb0619.png" width="450">
