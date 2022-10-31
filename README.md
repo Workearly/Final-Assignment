@@ -1,51 +1,19 @@
 # Final-Assignment
-This project is designed to simulate a full workflow of a Data Analyst from getting data off the Database to manipulate it with the use of Python and Pandas module to present it through matplotlib module or Tableau.
+My solutionest of solutions: 
+
+Roughly following the indicated steps,
+
+1) booze_info.csv is the csv product of the given sql file using SQLWorkbench
+
+2) The Jupyter notebook cells indicate the steps taken on the Python/Pandas part of the assignment fairly well. Notable difficulties would involve my lack of deeper 
+knowledge concerning the Pandas library. I could probably make things much simpler had I known better. Nevertheless, not too difficult.
+
+3) The final .csv file depicts the dataset containing the results of the analysis.
+
+4) The two .png figures are the product of the Matlab related problems. Created using the above afore mentioned dataset. Results are satisfying contextually,
+but do look like a proper mess. I had trouble figuring out how to assign unique colors to every zip-code in fig1 and I spent a whole lot more time than I 
+should trying to figure out how to properly format the y-axis store names in fig2 in order to not overlap.
 
 
-The concept is that we are given a dataset that contains Liquor Sales in the state of Iowa in USA between 2012-2020 and we are asked to find the most popular item per zipcode and the percentage of sales per store in the period between 2016-2019.
-
-We are also asked to visualize the Data and present them in either a matplotlib format or in Tableau Public.
-
-Every calculation and transformation of Data has to happen through a Python Script. 
-
-## The following steps are just a recommendation, we suggest you trying and think outside the box while working with this data and maybe take different paths.
-
-
-- ###### Step 1.
-
-Add the Dataset provided to Workbench.
-
-- ###### Step 2.
-
-Use a Query to get all the columns of the table between the years 2016-2019
-
-- ###### Step 3.
-
-Export the data to an CSV file like shown below
-
-![image](https://user-images.githubusercontent.com/84134316/184128259-8ce76a57-d31a-4fdb-86d2-e38d46fc253c.png)
-
-- ###### Step 4.
-
-Use Python and Pandas to Aggregate the CSV data so we can get the most popular item sold based on zip code and percentage of sales per store.
-
-- ###### Step 5.
-
-Use Matplotlib or Tableau with the newly made CSV file and present your Data.
-
-- ###### Step 6.
-
-Write a report of the steps you did and what difficulties you faced.
-
-## The visualization should look similar to something like this, but you are free to experiment. :
-
-
-### 1.  If you are using Matplotlib
-
-
-<img src="https://user-images.githubusercontent.com/84134316/183881562-1bbd2503-1ebd-47a1-a396-97af4acebc46.png" width="450">
-
-### 2. If you are using Tableau
-
-
-<img src="https://user-images.githubusercontent.com/84134316/183916100-85c98b3b-5de7-40dd-bbc1-cefdaacb0619.png" width="450">
+Final thoughts: all in all, this assignment would have cost a fraction of the time were we to use PowerBI; but personally, I prefer these clunky results to looking
+straight at the blazing sun that is PowerBI's light mode interface.
