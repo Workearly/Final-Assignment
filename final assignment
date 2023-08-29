@@ -1,0 +1,64 @@
+step 1:
+Added the Dataset provided to Workbench
+
+step 2:
+Created the database and selected all columns of the table between the years 2016-2019 :
+        USE `liquorSales`;
+        select *
+        from `finance_liquor_sales`
+        where year(date) in (2016,2017,2018,2019);
+
+step 3:
+Exported the data to an CSV file.
+
+step 4:
+Used Python and Pandas to Aggregate the CSV data and Matplotlib to present the Data:
+--------------------------------------------------------------------------------------------------------------
+       #Load the dataset into a Pandas DataFrame(get the most popular item sold based on zip code):
+       import pandas as pd
+       import matplotlib.pyplot as plt
+       df = pd.read_csv('final_assignment.csv')
+       x=df.groupby(['zip_code' , 'item_description'])['bottles_sold'].sum().reset_index(name='total')
+
+       plt.figure(figsize=(12,6))
+       for i in x['item_description']: 
+           plt.scatter(x[x['item_description']==i]['zip_code'],  x[x['item_description']==i]['total'], label=i )
+       plt.xlabel('zip_code')
+       plt.ylabel('bottles_sold')
+       plt.title('Bottles Sold')
+       plt.show()
+---------------------------------------------------------------------------------------------------------------
+	   #Load the dataset into a Pandas DataFrame(get the percentage of sales per store).
+       import pandas as pd
+
+       import matplotlib.pyplot as plt
+       df = pd.read_csv('final_assignment.csv')
+
+       total_sales=df['sale_dollars'].sum()
+       def pct_row(row):
+           return row['sale_dollars']/total_sales
+       df['pct_of_sales']=df.apply(pct_row, axis=1)
+       plt.figure(figsize=(12,6))
+       for i in df['store_number']:
+           plt.scatter(df[df['store_number']==i]['store_number'],  df[df['store_number']==i]['pct_of_sales'] )
+
+       plt.xlabel('store number')
+       plt.ylabel('percentage of sales')
+       plt.title('Percentage of sales per store')
+       plt.show()
+       print(df)
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
